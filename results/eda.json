@@ -1,0 +1,57 @@
+{
+  "raw_shape": [
+    191033,
+    85
+  ],
+  "raw_class_counts": {
+    "BENIGN": 189067,
+    "Bot": 1966
+  },
+  "raw_missing_cells": 28,
+  "raw_infinite_cells": 216,
+  "raw_exact_duplicates": 2,
+  "dropped_identifier_columns": [
+    "Flow ID",
+    "Source IP",
+    "Destination IP",
+    "Source Port",
+    "Timestamp",
+    "Fwd Header Length.1"
+  ],
+  "conflicting_predictor_rows_removed": 0,
+  "additional_predictor_duplicates_removed": 6886,
+  "clean_shape": [
+    184145,
+    78
+  ],
+  "clean_class_counts": {
+    "0": 182192,
+    "1": 1953
+  },
+  "splits": {
+    "train70": {
+      "rows": 128901,
+      "benign": 127534,
+      "bot": 1367
+    },
+    "development56": {
+      "rows": 103120,
+      "benign": 102026,
+      "bot": 1094
+    },
+    "validation14": {
+      "rows": 25781,
+      "benign": 25508,
+      "bot": 273
+    },
+    "test30": {
+      "rows": 55244,
+      "benign": 54658,
+      "bot": 586
+    }
+  },
+  "smote_counts": {
+    "0": 102026,
+    "1": 102026
+  }
+}

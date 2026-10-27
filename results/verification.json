@@ -1,0 +1,13 @@
+{
+  "full_test_replay_matches_saved_metrics": true,
+  "infinity_and_nan_handling": true,
+  "streaming_scores_and_threshold_match": true,
+  "split_ids_unique": true,
+  "fp_fn_exports_match_confusion_matrix": true,
+  "ten_genuine_FN_reviewed": true,
+  "validation_selection_rule_verified": true,
+  "test_recall_at_least_95_percent": true,
+  "gridsearch_candidates": 8,
+  "threshold_values": 9,
+  "input_csv_sha256": "c061cd98f39d8054aeaed6244a5129a20b3985983d0d022b860ae8aa07fe8d21"
+}

@@ -1,0 +1,79 @@
+Feature,Selected,Rank
+Destination Port,True,1.0
+Protocol,False,4.0
+Flow Duration,True,1.0
+Total Fwd Packets,False,3.0
+Total Backward Packets,False,2.0
+Total Length of Fwd Packets,False,2.0
+Total Length of Bwd Packets,True,1.0
+Fwd Packet Length Max,False,3.0
+Fwd Packet Length Min,False,2.0
+Fwd Packet Length Mean,False,3.0
+Fwd Packet Length Std,False,3.0
+Bwd Packet Length Max,True,1.0
+Bwd Packet Length Min,True,1.0
+Bwd Packet Length Mean,True,1.0
+Bwd Packet Length Std,False,3.0
+Flow Bytes/s,False,2.0
+Flow Packets/s,False,3.0
+Flow IAT Mean,False,3.0
+Flow IAT Std,False,3.0
+Flow IAT Max,False,3.0
+Flow IAT Min,False,3.0
+Fwd IAT Total,False,2.0
+Fwd IAT Mean,False,2.0
+Fwd IAT Std,False,4.0
+Fwd IAT Max,False,3.0
+Fwd IAT Min,False,4.0
+Bwd IAT Total,False,3.0
+Bwd IAT Mean,False,3.0
+Bwd IAT Std,False,2.0
+Bwd IAT Max,False,3.0
+Bwd IAT Min,False,4.0
+Fwd PSH Flags,False,3.0
+Fwd Header Length,False,3.0
+Bwd Header Length,False,2.0
+Fwd Packets/s,False,3.0
+Bwd Packets/s,True,1.0
+Min Packet Length,False,4.0
+Max Packet Length,False,2.0
+Packet Length Mean,True,1.0
+Packet Length Std,False,2.0
+Packet Length Variance,False,2.0
+FIN Flag Count,False,4.0
+SYN Flag Count,False,3.0
+RST Flag Count,False,4.0
+PSH Flag Count,False,4.0
+ACK Flag Count,False,3.0
+URG Flag Count,False,4.0
+ECE Flag Count,False,4.0
+Down/Up Ratio,False,3.0
+Average Packet Size,True,1.0
+Avg Fwd Segment Size,False,4.0
+Avg Bwd Segment Size,True,1.0
+Subflow Fwd Packets,False,2.0
+Subflow Fwd Bytes,False,2.0
+Subflow Bwd Packets,False,2.0
+Subflow Bwd Bytes,False,2.0
+Init_Win_bytes_forward,True,1.0
+Init_Win_bytes_backward,True,1.0
+act_data_pkt_fwd,False,4.0
+min_seg_size_forward,False,2.0
+Active Mean,False,4.0
+Active Std,False,4.0
+Active Max,False,4.0
+Active Min,False,4.0
+Idle Mean,False,4.0
+Idle Std,False,4.0
+Idle Max,False,4.0
+Idle Min,False,4.0
+Bwd PSH Flags,False,
+Fwd URG Flags,False,
+Bwd URG Flags,False,
+CWE Flag Count,False,
+Fwd Avg Bytes/Bulk,False,
+Fwd Avg Packets/Bulk,False,
+Fwd Avg Bulk Rate,False,
+Bwd Avg Bytes/Bulk,False,
+Bwd Avg Packets/Bulk,False,
+Bwd Avg Bulk Rate,False,
