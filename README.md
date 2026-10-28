@@ -25,6 +25,15 @@ It does not capture live network packets.
 
 Reports and notebook explanations are written in Vietnamese.
 
+## My Contribution
+
+This is an individual coursework project. I completed the
+data analysis, preprocessing, model comparison, threshold selection,
+evaluation, and report preparation.
+
+The experiment uses the dataset and requirements provided
+for the coursework.
+
 ## Methodology
 
 1. Remove duplicate records before splitting the data.
