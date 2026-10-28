@@ -1,7 +1,87 @@
-# Chapter 9 IDS Botnet - CE181900
+# 🔎 Botnet Detection IDS Lab
 
-Bài thực hiện từ `Chapter9_IDS_Botnet_Lab_Assignment.docx` và file Friday CSV được cung cấp.
-Báo cáo và chú giải bằng tiếng Việt; tên feature/code giữ tiếng Anh.
+A cybersecurity coursework project that classifies BENIGN and Bot
+network flows using machine learning on the Friday morning subset
+of CICIDS2017.
+
+The project covers data exploration, preprocessing, feature selection,
+class imbalance handling, model comparison, threshold selection,
+and false-positive / false-negative analysis.
+
+**Technologies:** Python · pandas · scikit-learn · Matplotlib · Jupyter
+
+[Read the report](report.pdf)
+· [Explore the notebook](notebook/ids_botnet_detection.ipynb)
+· [View experiment results](results/)
+
+## Project Overview
+
+The goal is to evaluate botnet detection on a labelled network-flow
+dataset and understand the trade-off between detecting attacks
+and generating false alarms.
+
+This is an offline learning experiment using CSV flow features.
+It does not capture live network packets.
+
+Reports and notebook explanations are written in Vietnamese.
+
+## Methodology
+
+1. Remove duplicate records before splitting the data.
+2. Exclude IP addresses, Flow ID, and Timestamp from predictors.
+3. Use stratified development / validation / test splits
+   of approximately 56% / 14% / 30%.
+4. Fit preprocessing, feature selection, and SMOTE on development
+   data, repeating these steps within cross-validation folds.
+5. Compare candidate models and select the model and decision
+   threshold using validation data.
+6. Evaluate the selected configuration on the held-out test set
+   and review misclassified flows.
+
+## Selected Configuration and Test Results
+
+**Model:** Random Forest with SMOTE  
+**Decision threshold:** 0.90  
+**Positive class:** Bot
+
+The configuration was selected on validation data by requiring
+recall of at least 95%, then prioritizing precision.
+
+| Metric | Held-out test result |
+|---|---:|
+| Precision | 99.82% |
+| Recall | 95.39% |
+| F1-score | 97.56% |
+| Average Precision (AP) | 0.99843 |
+| True positives | 559 |
+| False positives | 1 |
+| False negatives | 27 |
+| True negatives | 54,657 |
+
+Source: [Saved configuration and metrics](model/threshold.json).
+
+These values use the selected threshold of 0.90. The model comparison
+table contains results at a different operating threshold and should
+be read separately.
+
+### Confusion Matrix
+
+![Confusion matrix](figures/confusion_matrix.png)
+
+### Precision–Recall Curve
+
+![Precision–recall curve](figures/pr_curve.png)
+
+## Limitations
+
+- Results apply only to an internal split of the supplied Friday
+  morning dataset.
+- Generalization across hosts, time periods, and external datasets
+  has not been evaluated.
+- Synthetic SMOTE samples may contain fractional values for ports
+  or other discrete features.
+- CSV replay demonstrates inference on recorded flows, not a
+  deployed real-time IDS.
 
 ## Mở kết quả
 
